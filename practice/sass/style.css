@@ -155,4 +155,51 @@ section {
   text-decoration: none;
   color: #1a1820;
 }
+
+@media (max-width: 991px) {
+  .main__title h1 {
+    text-align: center;
+  }
+  .main__subtitle {
+    text-align: center;
+  }
+  .main__pay {
+    text-align: center;
+  }
+  .work {
+    margin-bottom: 2rem;
+  }
+  .work-cost {
+    text-align: center;
+  }
+  .wrap2 {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  .wrap2-block {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .phone-col {
+    text-align: right;
+  }
+  .wrap__block {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575) {
+  .wrap__block {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
