@@ -133,7 +133,6 @@ section
         &-block
             display: table-cell
             vertical-align: bottom
-            text-align: right 
 @media ( max-width: 767px )
     .phone-col
         text-align: right
@@ -142,9 +141,31 @@ section
             display: table-cell
             vertical-align: middle
             text-align: center
-@media ( max-width: 575)
+@media ( max-width: 575px)
     .wrap
         &__block
             display: table-cell
             vertical-align: middle
             text-align: center
+    .logo
+        text-align: center
+    .phone-col
+        text-align: center
+    .main
+        &__content
+            margin-top: 18rem
+            h1 
+                font-size: 25px
+                margin-bottom: 2rem
+    .work
+        margin-bottom: 1.5rem
+@media ( max-width: 342px )
+    .main
+        &__content
+            h1 
+                font-size: 22px
+                margin-bottom: 17px
+        &__subtitle
+            font-size: 22px
+            margin-bottom: 3.5rem
+    

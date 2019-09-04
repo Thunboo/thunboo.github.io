@@ -180,7 +180,6 @@ section {
   .wrap2-block {
     display: table-cell;
     vertical-align: bottom;
-    text-align: right;
   }
 }
 
@@ -195,11 +194,38 @@ section {
   }
 }
 
-@media (max-width: 575) {
+@media (max-width: 575px) {
   .wrap__block {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+  }
+  .logo {
+    text-align: center;
+  }
+  .phone-col {
+    text-align: center;
+  }
+  .main__content {
+    margin-top: 18rem;
+  }
+  .main__content h1 {
+    font-size: 25px;
+    margin-bottom: 2rem;
+  }
+  .work {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 342px) {
+  .main__content h1 {
+    font-size: 22px;
+    margin-bottom: 17px;
+  }
+  .main__subtitle {
+    font-size: 22px;
+    margin-bottom: 3.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
