@@ -26,10 +26,6 @@ button:focus, a:focus, input:focus {
   outline: none;
 }
 
-section {
-  padding: 10rem 0;
-}
-
 .main {
   padding: 3rem 0 5rem 0;
   background: #fff url(../pics/main-bg.jpg) center center no-repeat;
