@@ -154,6 +154,26 @@ button:focus, a:focus, input:focus {
   color: #1a1820;
 }
 
+.section-header {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 3.2rem;
+  font-weight: 650;
+}
+
+.features-block {
+  text-align: center;
+}
+
+.features-img {
+  height: 6rem;
+}
+
+.features-img img {
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media (max-width: 991px) {
   .main__title h1 {
     text-align: center;
