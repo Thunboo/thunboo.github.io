@@ -284,6 +284,12 @@ button:focus, a:focus, input:focus {
   }
 }
 
+@media (max-width: 594px) {
+  .section-header {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 575px) {
   .prev, .next {
     height: 3rem;
@@ -310,14 +316,20 @@ button:focus, a:focus, input:focus {
   .work {
     margin-bottom: 1.5rem;
   }
+  .section-header {
+    font-size: 3.2rem;
+  }
   .features-text {
     width: 80%;
   }
 }
 
 @media (max-width: 434px) {
-  .features-text {
+  .features {
     width: 100%;
+  }
+  .features-text {
+    width: 80%;
   }
 }
 

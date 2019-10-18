@@ -25,7 +25,7 @@ button, a, input
     &:focus
         outline: none
 .slick-active
-    outline: none
+    outline: none 
 .prev
     position: absolute
     top: 12%
@@ -47,7 +47,7 @@ button, a, input
     height: 2rem
     border: none 
     background: url(../pics/right-arrow.svg) center no-repeat
-    background-size: 80%
+    background-size: 80%   
 .prev, .next
     transition: all 0.3s
     outline: none
@@ -204,7 +204,10 @@ button, a, input
             display: table-cell
             vertical-align: middle
             text-align: center
-@media ( max-width: 575px)
+@media ( max-width: 594px )
+    .section-header
+        font-size: 3rem
+@media ( max-width: 575px )
     .prev, .next
         height: 3rem
         width: 3rem
@@ -225,13 +228,17 @@ button, a, input
                 margin-bottom: 2rem
     .work
         margin-bottom: 1.5rem
+    .section
+        &-header
+            font-size: 3.2rem
     .features
         &-text 
             width: 80%
 @media ( max-width: 434px)
     .features
+        width: 100%
         &-text
-            width: 100%
+            width: 80%
 @media ( max-width: 342px )
     .main
         &__content
