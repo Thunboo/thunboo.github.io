@@ -24,6 +24,8 @@ html
 button, a, input
     &:focus
         outline: none
+.slick-active
+    outline: none
 .main 
     padding: 3rem 0 5rem 0
     background: #fff url(../pics/main-bg.jpg) center center no-repeat
@@ -116,18 +118,37 @@ button, a, input
 //         slider        // 
 .section-header
     text-align: center
-    margin: 2rem 0
+    margin: 6rem 0
     font-size: 3.2rem
     font-weight: 650
 .features
+    width: 80%
+    margin: 0 auto
     &-block
         text-align: center
+        h3
+            margin: 3rem 0 2rem
+    &-text
+        width: 76%
+        margin: 0 auto
+        font-size: 15px
+        line-height: 1.3
+        padding: 0 10px
     &-img 
         height: 6rem
+        margin-bottom: 4%
         img
             text-align: center
             margin: 0 auto
 
+@media ( max-width: 1825px)
+    .features
+        &-text
+            width: 87%
+@media ( max-width: 1595px)
+    .features
+        &-text
+            width: 95%
 @media ( max-width: 991px)
     .main
         &__title
@@ -174,6 +195,13 @@ button, a, input
                 margin-bottom: 2rem
     .work
         margin-bottom: 1.5rem
+    .features
+        &-text 
+            width: 80%
+@media ( max-width: 434px)
+    .features
+        &-text
+            width: 100%
 @media ( max-width: 342px )
     .main
         &__content
