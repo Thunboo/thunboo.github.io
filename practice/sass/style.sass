@@ -25,34 +25,27 @@ button, a, input
     &:focus
         outline: none
 .slick-active
-    outline: none 
-.prev
-    position: absolute
-    top: 12%
-    left: 3%
-    transform: scaleY(-50%)
-    z-index: 10
-    width: 2rem
-    height: 2rem
-    border: none 
-    background: url(../pics/left-arrow.svg) center no-repeat
-    background-size: 80%
-.next
-    position: absolute
-    top: 12%
-    right: 3%
-    transform: scaleY(-50%)
-    z-index: 10
-    width: 2rem
-    height: 2rem
-    border: none 
-    background: url(../pics/right-arrow.svg) center no-repeat
-    background-size: 80%   
+    outline: none   
 .prev, .next
+    top: 12%
+    position: absolute
+    z-index: 10
+    transform: translateY(50%)
+    width: 2rem
+    height: 2rem
+    border: none
     transition: all 0.3s
     outline: none
     &:hover 
         cursor: pointer 
+.prev
+    left: 3%
+    background: url(../pics/left-arrow.svg) center no-repeat 
+    background-size: 80%
+.next
+    right: 3%
+    background: url(../pics/right-arrow.svg) center no-repeat 
+    background-size: 80%
 .main 
     padding: 3rem 0 5rem 0
     background: #fff url(../pics/main-bg.jpg) center center no-repeat
