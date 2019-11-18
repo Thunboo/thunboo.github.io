@@ -21,7 +21,7 @@ html
     &:hover
         cursor: pointer
         background-color: darken($btn-color, 3%) //lighten
-button, a, input
+button, a, input, textarea
     &:focus
         outline: none
 .slick-active
@@ -101,8 +101,8 @@ button, a, input
         width: 100%
         height: 3.8rem
         border: 1px solid $border-input
-        padding-left: 8px 
-        padding-top: 8px
+        border-radius: 5px
+        padding: 8px 0 8px 8px
         font-size: 14px
     &__form-btn
         display: block
@@ -141,6 +141,13 @@ button, a, input
     margin: 6rem 0
     font-size: 3.2rem
     font-weight: 650
+    &_light
+        color: $light
+    h2
+        font-weight: 650
+        font-size: 3.2rem 
+    p 
+        font-size: 14px
 .features
     width: 80%
     margin: 0 auto
@@ -160,16 +167,117 @@ button, a, input
         img
             text-align: center
             margin: 0 auto
+.popup
+    display: none
+    position: fixed
+    top: 0%
+    left: 0%
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 9
+    &-dialog
+    &-content
+        position: fixed
+        top: 12%
+        left: 50%
+        width: 18%
+        background-color: $light
+        transform: translateX(-50%)
+        text-align: center
+        padding: 2rem 4rem 3rem
+        p 
+            font-size: 15px
+    &-close
+        position: absolute
+        top: -2rem
+        right: -2rem
+        width: 2rem
+        text-align: center
+        border: none
+        background-color: transparent
+        font-size: 3rem
+        color: $bg-light
+    &-header 
+        font-size: 2rem 
+        font-weight: 600
+        margin: 2rem 0 1rem
+    &-form
+        margin-top: 3.5rem
+        label
+            position: absolute
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            background-color: $light
+            padding: 0.5rem
+            font-size: 1.3rem
+        &-textarea
+                display: block
+                margin: 2rem 0
+                width: 100%
+                border: 1px solid $border-input
+                padding-left: 8px 
+                padding-top: 8px
+                font-size: 14px
+.prices
+    background: $icons-color url(../pics/prices/prices-bg.jpg)
+    padding: 10rem
+    &-button 
+        text-align: right
+    &-header-btn
+        margin-top: 6rem
+    &-block 
+        min-height: 50rem
+        background-color: $light
+        box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17)
+        text-align: center
+        padding: 2rem 2.2rem
+        h4  
+            font-size: 19px
+            font-weight: 650 
+            margin: 2rem 0
+    &-list
+            list-style: none 
+            min-height: 14rem
+            padding: 0
+            font-size: 15px
+            line-height: 1.6
+            font-weight: 500
+            li  
+                &:before
+                    content: ''
+                    display: inline-block
+                    width: 2rem
+                    height: 2rem
+                    background: url(../pics/check.svg) no-repeat center
+                    background-size: 70%
+                    vertical-align: middle
+                    margin-right: 1rem
 
-@media ( max-width: 1825px)
+    img 
+        margin-bottom: 2rem
+        max-width: 28rem
+    &-tag
+        font-size: 19px
+        font-weight: 650
+        display: block
+        margin-bottom: 2rem
+
+//=====================================adaptive section============================
+//=================================================================================
+@media ( max-width: 1825px )
     .features
         &-text
             width: 87%
-@media ( max-width: 1595px)
+@media ( max-width: 1595px )
     .features
         &-text
             width: 95%
-@media ( max-width: 991px)
+@media ( max-width: 1081px )
+    .prices
+        &-header-btn 
+            padding: 1rem 1.8rem
+@media ( max-width: 991px )
     .main
         &__title
             h1 
@@ -189,6 +297,15 @@ button, a, input
         &-block
             display: table-cell
             vertical-align: bottom
+    .prices
+        &-button 
+            text-align: center
+            padding: 2rem 0
+        &-header-btn
+            margin-top: 0
+            margin-bottom: 2rem
+    .section-header_light
+        margin-top: 2rem
 @media ( max-width: 767px )
     .phone-col
         text-align: right
