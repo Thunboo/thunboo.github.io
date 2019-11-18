@@ -150,7 +150,9 @@ button, a, input, textarea
         font-size: 14px
 .features
     width: 80%
+    max-width: 1200px
     margin: 0 auto
+    margin-bottom: 5rem
     &-block
         text-align: center
         h3
@@ -159,7 +161,7 @@ button, a, input, textarea
         width: 76%
         margin: 0 auto
         font-size: 15px
-        line-height: 1.3
+        line-height: 20px
         padding: 0 10px
     &-img 
         height: 6rem
@@ -167,6 +169,11 @@ button, a, input, textarea
         img
             text-align: center
             margin: 0 auto
+#features-link
+    color: $icons-color
+    text-decoration: underline
+    &:hover 
+        text-decoration: none
 .popup
     display: none
     position: fixed
@@ -175,13 +182,13 @@ button, a, input, textarea
     width: 100%
     height: 100%
     background-color: rgba(0, 0, 0, 0.5)
-    z-index: 9
+    z-index: 11
     &-dialog
     &-content
         position: fixed
         top: 12%
         left: 50%
-        width: 18%
+        width: 35rem
         background-color: $light
         transform: translateX(-50%)
         text-align: center
@@ -219,11 +226,22 @@ button, a, input, textarea
                 padding-left: 8px 
                 padding-top: 8px
                 font-size: 14px
+        button
+            display: block
+            width: 100%
+            font-size: 14px
+            padding: 2rem 4rem
 .prices
     background: $icons-color url(../pics/prices/prices-bg.jpg)
-    padding: 10rem
+    padding: 10rem 1rem
+    .container
+        position: relative
+        //    width: 1200px
+        //    margin: 0 auto
     &-button 
-        text-align: right
+        position: absolute
+        top: 5px 
+        right: 0
     &-header-btn
         margin-top: 6rem
     &-block 
@@ -233,7 +251,7 @@ button, a, input, textarea
         text-align: center
         padding: 2rem 2.2rem
         h4  
-            font-size: 19px
+            font-size: 18px
             font-weight: 650 
             margin: 2rem 0
     &-list
@@ -262,7 +280,255 @@ button, a, input, textarea
         font-weight: 650
         display: block
         margin-bottom: 2rem
-
+.feedback
+    background: url(../pics/feedback/feedback-bg.png) no-repeat center 
+    background-size: cover 
+    padding-bottom: 6rem
+    position: relative
+    padding-top: 3rem
+    .section-header 
+        margin-bottom: 8rem 
+    &-slider 
+        box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11)
+        position: relative
+        &-arrow
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            width: 4rem
+            height: 5rem
+            background-color: $icons-color
+            border: none
+            &-prev
+                left: -4rem
+            &-next
+                right: -4rem
+    &-block
+        width: 100%
+        //max-height: 430px
+        background-color: $light
+        padding: 4rem 5rem
+        outline: none
+    &-work-info
+        font-size: 16px
+    &-customer
+        &-name
+            font-size: 17px
+        &-info
+            margin-top: 25px
+            img 
+                margin-top: -1.7rem
+                height: 52px
+                display: inline-block
+            &-text 
+                display: inline-block
+                font-size: 14px
+                margin-left: 7px
+                p 
+                    margin-bottom: 0
+        &-message
+            position: relative
+            border: 2px solid $icons-color
+            padding: 8px 1rem 1rem
+            margin-top: 2rem
+            font-size: 16px
+            &:before
+                content: ''
+                position: absolute
+                display: block
+                top: -1.97rem
+                left: 4rem
+                width: 2rem
+                height: 2rem
+                background-color: $light
+                border: 2px solid $icons-color
+                border-top-right-radius: 100px 
+                border-bottom: none
+    &-form
+        position: relative
+        margin: 3.5rem auto 0
+        padding: 5rem 8rem
+        text-align: center
+        max-width: 700px
+        z-index: 2
+        background-color: $light
+        h4 
+            font-weight: 600
+            font-size: 19px
+        button 
+            font-size: 14px
+            font-weight: 600
+            padding: 1.5rem 5rem 
+            margin-top: 15px
+        &-label
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            background-color: $light
+            padding: 0.5rem
+            font-size: 1.3rem
+        input
+            display: inline-block
+            width: 100%
+            height: 48px
+            margin: 1.5rem 0
+    &-hand
+        position: absolute
+        bottom: 0
+        height: 200px
+.scheme
+    //position: relative
+    background: url(../pics/scheme-bg.png) bottom -10rem right -15rem no-repeat
+    background-size: 600px
+    .section-header
+        margin-bottom: 10rem
+        p   
+            margin-top: 5px
+            font-weight: 400
+    &-block
+        padding: 0 50px
+        margin-bottom: 9rem
+        h2 
+            margin: 15px 0 10px
+            font-weight: 700
+        span 
+            font-size: 13px
+    &-bg
+        //position: absolute
+        //right: 0
+        //bottom: 0px
+        //height: 200px
+        display: none
+.all-inclusive
+    background-color: #f5f5f5
+    padding: 6rem 0 0 
+    .section-header
+        margin-top: 0
+        p 
+            margin-top: 10px
+            font-weight: 400
+    .media
+        min-height: 90px
+        &-left 
+            .circle 
+                display: inline-block
+                border-radius: 50%
+                width: 100%
+                height: 100%
+                background-color: $icons-color
+                font-size: 20px
+                font-weight: 700
+                &-border
+                    display: inline-block
+                    line-height: 4rem
+                    padding: 3px
+                    height: 5rem
+                    width: 5rem
+                    border-radius: 50%
+                    border: 2px solid $icons-color
+                    color: #ffffff
+                    text-align: center
+        &-body
+            margin-left: 1rem
+            margin-top: 7px
+            h2 
+                font-size: 15px
+                font-weight: 700
+            span 
+                font-size: 11px
+.problems
+    position: relative
+    &-list
+        min-height: 38rem
+        background-color: #ffffff
+        padding: 2rem 0 0 3rem
+        p
+            font-size: 20px
+            font-weight: 600
+        &__bad
+            border: 4px solid #f5f5f5
+            p 
+                color: darken(#f5f5f5, 20%)
+            ul 
+                list-style: none
+                padding-left: 0
+                li 
+                    position: relative
+                    padding-left: 35px
+                    margin-bottom: 3rem
+                    font-size: 13px
+                    line-height: 2.1
+                    &:before
+                        content: ''
+                        position: absolute
+                        left: 0
+                        display: inline-block
+                        width: 3rem
+                        height: 3rem
+                        background: url(../pics/problems/problem.svg) no-repeat center
+                        background-size: 70%
+        &__good
+            border: 4px solid $icons-color
+            ul 
+                list-style: none
+                padding-left: 0
+                li 
+                    position: relative
+                    padding-left: 35px 
+                    margin-bottom: 3rem
+                    font-size: 13px                   
+                    &:before
+                        content: ''
+                        position: absolute
+                        left: 0
+                        top: 10%
+                        display: inline-block
+                        width: 3rem
+                        height: 3rem
+                        background: url(../pics/problems/norms.svg) no-repeat center
+                        background-size: 70%
+    &-woman
+        position: absolute
+        left: 50%
+        top: 4rem
+        transform: translateX(-60%)
+        z-index: 2
+#problems-list__li-1
+    line-height: 2.1
+#problems-list__li-2
+    line-height: 2.1
+.materials
+    background: url(../pics/materials/materials-bg.jpg) no-repeat center
+    margin-top: 9rem
+    padding-top: 4rem
+    .section-header
+        margin-bottom: 14rem
+        p 
+            font-weight: 400
+            margin-top: 1rem
+    &-block
+        text-align: center
+        min-height: 32rem
+        img 
+            height: 177px
+        h2 
+            font-weight: 700
+        p 
+            font-size: 14px
+            margin: 3rem 0
+            min-height: 45px
+        a 
+            font-size: 14px
+            color: $icons-color
+            border-bottom: 1px dotted
+    &-afterwords
+        font-size: 14px
+        text-align: center
+        margin-top: 4rem
+        margin-bottom: 6rem
+        a 
+            color: $icons-color
+            border-bottom: 1px dotted
 //=====================================adaptive section============================
 //=================================================================================
 @media ( max-width: 1825px )
@@ -273,10 +539,51 @@ button, a, input, textarea
     .features
         &-text
             width: 95%
-@media ( max-width: 1081px )
+@media ( max-width: 1277px )
     .prices
-        &-header-btn 
-            padding: 1rem 1.8rem
+        &-block
+            min-height: 57rem
+            padding: 2rem
+            h4 
+                padding: 0 4.5rem
+    #prices-h4-1
+        padding: 0 2.5rem
+    #prices-h4-3
+        padding: 0 7rem
+@media ( max-width: 1230px)
+    .prices
+        &-column
+            padding: 0 5px
+        &-block
+            position: relative
+            &-btn 
+                position: absolute
+                bottom: 2rem
+                left: 50%
+                transform: translateX(-50%)
+@media ( max-width: 1150px )
+    .prices
+        &-block
+            padding: 2rem 1.5rem
+            img 
+                max-width: 27rem      
+@media ( max-width: 1085px )
+    #prices-h4-1
+        padding: 0 0.5rem
+@media ( max-width: 1024px )
+    .popup
+        &-form
+            button 
+                font-size: 15px
+                font-weight: 600
+    .prices
+        &-button
+            position: static
+            text-align: center
+            button
+                font-size: 14px
+                font-weight: 600 
+                padding: 2rem 4rem
 @media ( max-width: 991px )
     .main
         &__title
@@ -297,15 +604,18 @@ button, a, input, textarea
         &-block
             display: table-cell
             vertical-align: bottom
-    .prices
-        &-button 
-            text-align: center
-            padding: 2rem 0
         &-header-btn
             margin-top: 0
             margin-bottom: 2rem
+    .prices
+        &-block
+            margin-bottom: 2rem
     .section-header_light
         margin-top: 2rem
+    .feedback
+        &-hand
+            position: static
+            display: none
 @media ( max-width: 767px )
     .phone-col
         text-align: right
@@ -344,11 +654,47 @@ button, a, input, textarea
     .features
         &-text 
             width: 80%
+    .popup
+        &-close
+            width: 3rem 
+            top: -2.5rem
+            right: -3rem
+            font-size: 4rem
+    .prices
+        padding: 10rem 2rem
+        &-tag
+            font-size: 22px
+    .feedback
+        &-slider
+            &-arrow
+                &-prev 
+                    left: -200px
+                &-next
+                    right: 800px
 @media ( max-width: 434px)
     .features
         width: 100%
         &-text
             width: 80%
+    .popup
+        &-close
+            top: -1.5rem
+            right: 1rem 
+            color: $text
+    .prices
+        padding: 10rem 0.5rem
+@media ( max-width: 365px )
+    .popup
+        &-form
+            button
+                padding: 1.5rem 3rem
+        &-content
+            top: 5.5%
+            width: 30rem
+    .prices
+        &-button
+            button
+                padding: 2rem 6.5%
 @media ( max-width: 342px )
     .main
         &__content

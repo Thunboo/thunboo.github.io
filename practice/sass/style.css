@@ -210,7 +210,9 @@ button:focus, a:focus, input:focus, textarea:focus {
 
 .features {
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 .features-block {
@@ -225,7 +227,7 @@ button:focus, a:focus, input:focus, textarea:focus {
   width: 76%;
   margin: 0 auto;
   font-size: 15px;
-  line-height: 1.3;
+  line-height: 20px;
   padding: 0 10px;
 }
 
@@ -239,6 +241,15 @@ button:focus, a:focus, input:focus, textarea:focus {
   margin: 0 auto;
 }
 
+#features-link {
+  color: #46b814;
+  text-decoration: underline;
+}
+
+#features-link:hover {
+  text-decoration: none;
+}
+
 .popup {
   display: none;
   position: fixed;
@@ -247,14 +258,14 @@ button:focus, a:focus, input:focus, textarea:focus {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9;
+  z-index: 11;
 }
 
 .popup-content {
   position: fixed;
   top: 12%;
   left: 50%;
-  width: 18%;
+  width: 35rem;
   background-color: #fff;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -308,13 +319,26 @@ button:focus, a:focus, input:focus, textarea:focus {
   font-size: 14px;
 }
 
+.popup-form button {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 2rem 4rem;
+}
+
 .prices {
   background: #46b814 url(../pics/prices/prices-bg.jpg);
-  padding: 10rem;
+  padding: 10rem 1rem;
+}
+
+.prices .container {
+  position: relative;
 }
 
 .prices-button {
-  text-align: right;
+  position: absolute;
+  top: 5px;
+  right: 0;
 }
 
 .prices-header-btn {
@@ -331,7 +355,7 @@ button:focus, a:focus, input:focus, textarea:focus {
 }
 
 .prices-block h4 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 650;
   margin: 2rem 0;
 }
@@ -368,6 +392,375 @@ button:focus, a:focus, input:focus, textarea:focus {
   margin-bottom: 2rem;
 }
 
+.feedback {
+  background: url(../pics/feedback/feedback-bg.png) no-repeat center;
+  background-size: cover;
+  padding-bottom: 6rem;
+  position: relative;
+  padding-top: 3rem;
+}
+
+.feedback .section-header {
+  margin-bottom: 8rem;
+}
+
+.feedback-slider {
+  -webkit-box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+          box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+  position: relative;
+}
+
+.feedback-slider-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 4rem;
+  height: 5rem;
+  background-color: #46b814;
+  border: none;
+}
+
+.feedback-slider-arrow-prev {
+  left: -4rem;
+}
+
+.feedback-slider-arrow-next {
+  right: -4rem;
+}
+
+.feedback-block {
+  width: 100%;
+  background-color: #fff;
+  padding: 4rem 5rem;
+  outline: none;
+}
+
+.feedback-work-info {
+  font-size: 16px;
+}
+
+.feedback-customer-name {
+  font-size: 17px;
+}
+
+.feedback-customer-info {
+  margin-top: 25px;
+}
+
+.feedback-customer-info img {
+  margin-top: -1.7rem;
+  height: 52px;
+  display: inline-block;
+}
+
+.feedback-customer-info-text {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 7px;
+}
+
+.feedback-customer-info-text p {
+  margin-bottom: 0;
+}
+
+.feedback-customer-message {
+  position: relative;
+  border: 2px solid #46b814;
+  padding: 8px 1rem 1rem;
+  margin-top: 2rem;
+  font-size: 16px;
+}
+
+.feedback-customer-message:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -1.97rem;
+  left: 4rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border: 2px solid #46b814;
+  border-top-right-radius: 100px;
+  border-bottom: none;
+}
+
+.feedback-form {
+  position: relative;
+  margin: 3.5rem auto 0;
+  padding: 5rem 8rem;
+  text-align: center;
+  max-width: 700px;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.feedback-form h4 {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.feedback-form button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 1.5rem 5rem;
+  margin-top: 15px;
+}
+
+.feedback-form-label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.feedback-form input {
+  display: inline-block;
+  width: 100%;
+  height: 48px;
+  margin: 1.5rem 0;
+}
+
+.feedback-hand {
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+}
+
+.scheme {
+  background: url(../pics/scheme-bg.png) bottom -10rem right -15rem no-repeat;
+  background-size: 600px;
+}
+
+.scheme .section-header {
+  margin-bottom: 10rem;
+}
+
+.scheme .section-header p {
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.scheme-block {
+  padding: 0 50px;
+  margin-bottom: 9rem;
+}
+
+.scheme-block h2 {
+  margin: 15px 0 10px;
+  font-weight: 700;
+}
+
+.scheme-block span {
+  font-size: 13px;
+}
+
+.scheme-bg {
+  display: none;
+}
+
+.all-inclusive {
+  background-color: #f5f5f5;
+  padding: 6rem 0 0;
+}
+
+.all-inclusive .section-header {
+  margin-top: 0;
+}
+
+.all-inclusive .section-header p {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.all-inclusive .media {
+  min-height: 90px;
+}
+
+.all-inclusive .media-left .circle {
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #46b814;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.all-inclusive .media-left .circle-border {
+  display: inline-block;
+  line-height: 4rem;
+  padding: 3px;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 2px solid #46b814;
+  color: #ffffff;
+  text-align: center;
+}
+
+.all-inclusive .media-body {
+  margin-left: 1rem;
+  margin-top: 7px;
+}
+
+.all-inclusive .media-body h2 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.all-inclusive .media-body span {
+  font-size: 11px;
+}
+
+.problems {
+  position: relative;
+}
+
+.problems-list {
+  min-height: 38rem;
+  background-color: #ffffff;
+  padding: 2rem 0 0 3rem;
+}
+
+.problems-list p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.problems-list__bad {
+  border: 4px solid #f5f5f5;
+}
+
+.problems-list__bad p {
+  color: #c2c2c2;
+}
+
+.problems-list__bad ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.problems-list__bad ul li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 3rem;
+  font-size: 13px;
+  line-height: 2.1;
+}
+
+.problems-list__bad ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background: url(../pics/problems/problem.svg) no-repeat center;
+  background-size: 70%;
+}
+
+.problems-list__good {
+  border: 4px solid #46b814;
+}
+
+.problems-list__good ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.problems-list__good ul li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 3rem;
+  font-size: 13px;
+}
+
+.problems-list__good ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10%;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background: url(../pics/problems/norms.svg) no-repeat center;
+  background-size: 70%;
+}
+
+.problems-woman {
+  position: absolute;
+  left: 50%;
+  top: 4rem;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+  z-index: 2;
+}
+
+#problems-list__li-1 {
+  line-height: 2.1;
+}
+
+#problems-list__li-2 {
+  line-height: 2.1;
+}
+
+.materials {
+  background: url(../pics/materials/materials-bg.jpg) no-repeat center;
+  margin-top: 9rem;
+  padding-top: 4rem;
+}
+
+.materials .section-header {
+  margin-bottom: 14rem;
+}
+
+.materials .section-header p {
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.materials-block {
+  text-align: center;
+  min-height: 32rem;
+}
+
+.materials-block img {
+  height: 177px;
+}
+
+.materials-block h2 {
+  font-weight: 700;
+}
+
+.materials-block p {
+  font-size: 14px;
+  margin: 3rem 0;
+  min-height: 45px;
+}
+
+.materials-block a {
+  font-size: 14px;
+  color: #46b814;
+  border-bottom: 1px dotted;
+}
+
+.materials-afterwords {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.materials-afterwords a {
+  color: #46b814;
+  border-bottom: 1px dotted;
+}
+
 @media (max-width: 1825px) {
   .features-text {
     width: 87%;
@@ -380,9 +773,66 @@ button:focus, a:focus, input:focus, textarea:focus {
   }
 }
 
-@media (max-width: 1081px) {
-  .prices-header-btn {
-    padding: 1rem 1.8rem;
+@media (max-width: 1277px) {
+  .prices-block {
+    min-height: 57rem;
+    padding: 2rem;
+  }
+  .prices-block h4 {
+    padding: 0 4.5rem;
+  }
+  #prices-h4-1 {
+    padding: 0 2.5rem;
+  }
+  #prices-h4-3 {
+    padding: 0 7rem;
+  }
+}
+
+@media (max-width: 1230px) {
+  .prices-column {
+    padding: 0 5px;
+  }
+  .prices-block {
+    position: relative;
+  }
+  .prices-block-btn {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1150px) {
+  .prices-block {
+    padding: 2rem 1.5rem;
+  }
+  .prices-block img {
+    max-width: 27rem;
+  }
+}
+
+@media (max-width: 1085px) {
+  #prices-h4-1 {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .popup-form button {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .prices-button {
+    position: static;
+    text-align: center;
+  }
+  .prices-button button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 2rem 4rem;
   }
 }
 
@@ -411,16 +861,19 @@ button:focus, a:focus, input:focus, textarea:focus {
     display: table-cell;
     vertical-align: bottom;
   }
-  .prices-button {
-    text-align: center;
-    padding: 2rem 0;
-  }
-  .prices-header-btn {
+  .wrap2-header-btn {
     margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .prices-block {
     margin-bottom: 2rem;
   }
   .section-header_light {
     margin-top: 2rem;
+  }
+  .feedback-hand {
+    position: static;
+    display: none;
   }
 }
 
@@ -473,6 +926,24 @@ button:focus, a:focus, input:focus, textarea:focus {
   .features-text {
     width: 80%;
   }
+  .popup-close {
+    width: 3rem;
+    top: -2.5rem;
+    right: -3rem;
+    font-size: 4rem;
+  }
+  .prices {
+    padding: 10rem 2rem;
+  }
+  .prices-tag {
+    font-size: 22px;
+  }
+  .feedback-slider-arrow-prev {
+    left: -200px;
+  }
+  .feedback-slider-arrow-next {
+    right: 800px;
+  }
 }
 
 @media (max-width: 434px) {
@@ -481,6 +952,27 @@ button:focus, a:focus, input:focus, textarea:focus {
   }
   .features-text {
     width: 80%;
+  }
+  .popup-close {
+    top: -1.5rem;
+    right: 1rem;
+    color: #1a1820;
+  }
+  .prices {
+    padding: 10rem 0.5rem;
+  }
+}
+
+@media (max-width: 365px) {
+  .popup-form button {
+    padding: 1.5rem 3rem;
+  }
+  .popup-content {
+    top: 5.5%;
+    width: 30rem;
+  }
+  .prices-button button {
+    padding: 2rem 6.5%;
   }
 }
 
