@@ -890,6 +890,7 @@ button:focus, a:focus, input:focus, textarea:focus {
     background-size: 0%;
   }
   .problems-list {
+    min-height: 32rem;
     margin-bottom: 6rem;
     padding-right: 5px;
   }
