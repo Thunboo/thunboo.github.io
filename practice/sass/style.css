@@ -712,7 +712,7 @@ button:focus, a:focus, input:focus, textarea:focus {
 
 .materials {
   background: url(../pics/materials/materials-bg.jpg) no-repeat center;
-  margin-top: 3rem;
+  margin-top: 9rem;
   padding-top: 4rem;
 }
 
@@ -900,6 +900,7 @@ button:focus, a:focus, input:focus, textarea:focus {
     display: none;
   }
   .materials {
+    margin-top: 3rem;
     background-repeat: repeat-y;
   }
   .materials-block {
