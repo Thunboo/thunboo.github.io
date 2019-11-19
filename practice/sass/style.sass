@@ -377,7 +377,6 @@ button, a, input, textarea
         bottom: 0
         height: 200px
 .scheme
-    //position: relative
     background: url(../pics/scheme-bg.png) bottom -10rem right -15rem no-repeat
     background-size: 600px
     .section-header
@@ -393,12 +392,6 @@ button, a, input, textarea
             font-weight: 700
         span 
             font-size: 13px
-    &-bg
-        //position: absolute
-        //right: 0
-        //bottom: 0px
-        //height: 200px
-        display: none
 .all-inclusive
     background-color: #f5f5f5
     padding: 6rem 0 0 
@@ -447,6 +440,7 @@ button, a, input, textarea
             font-weight: 600
         &__bad
             border: 4px solid #f5f5f5
+            padding-right: 20px
             p 
                 color: darken(#f5f5f5, 20%)
             ul 
@@ -494,12 +488,14 @@ button, a, input, textarea
         transform: translateX(-60%)
         z-index: 2
 #problems-list__li-1
-    line-height: 2.1
+    line-height: 1.5
 #problems-list__li-2
+    line-height: 2.1
+#problems-list__li-3
     line-height: 2.1
 .materials
     background: url(../pics/materials/materials-bg.jpg) no-repeat center
-    margin-top: 9rem
+    margin-top: 3rem
     padding-top: 4rem
     .section-header
         margin-bottom: 14rem
@@ -521,6 +517,9 @@ button, a, input, textarea
             font-size: 14px
             color: $icons-color
             border-bottom: 1px dotted
+            &:hover 
+                text-decoration: none
+                border: none
     &-afterwords
         font-size: 14px
         text-align: center
@@ -529,6 +528,9 @@ button, a, input, textarea
         a 
             color: $icons-color
             border-bottom: 1px dotted
+            &:hover 
+                text-decoration: none
+                border: none
 //=====================================adaptive section============================
 //=================================================================================
 @media ( max-width: 1825px )
@@ -616,6 +618,29 @@ button, a, input, textarea
         &-hand
             position: static
             display: none
+    .scheme 
+        background-size: 0%
+    .problems
+        &-list 
+            margin-bottom: 6rem
+            padding-right: 5px
+            &__bad 
+                padding-right: 0
+        &-woman 
+            display: none
+    .materials
+        background-repeat: repeat-y
+        &-block
+            margin-bottom: 4rem
+        &-afterwords
+            max-width: 510px
+            margin: 2rem auto 6rem
+@media ( max-width: 991px) and ( min-width: 768px)
+    .feedback
+        &-block
+            .fotorama
+                width: 510px
+                margin: 0 auto
 @media ( max-width: 767px )
     .phone-col
         text-align: right
@@ -623,6 +648,9 @@ button, a, input, textarea
         &__block
             display: table-cell
             vertical-align: middle
+            text-align: center
+    .scheme
+        &-block 
             text-align: center
 @media ( max-width: 594px )
     .section-header
@@ -665,6 +693,10 @@ button, a, input, textarea
         &-tag
             font-size: 22px
     .feedback
+        &-block
+            .fotorama
+                &__nav-wrap
+                    display: none
         &-slider
             &-arrow
                 &-prev 
@@ -683,6 +715,16 @@ button, a, input, textarea
             color: $text
     .prices
         padding: 10rem 0.5rem
+    .feedback
+        &-block
+            padding: 30px
+        &-form
+            padding: 5rem 4rem
+            .button
+                padding: 1.5rem 3rem
+    .materials
+        &-afterwords
+            max-width: 300px
 @media ( max-width: 365px )
     .popup
         &-form
@@ -695,6 +737,9 @@ button, a, input, textarea
         &-button
             button
                 padding: 2rem 6.5%
+    .feedback
+        &-block
+            padding: 20px 10px
 @media ( max-width: 342px )
     .main
         &__content

@@ -559,10 +559,6 @@ button:focus, a:focus, input:focus, textarea:focus {
   font-size: 13px;
 }
 
-.scheme-bg {
-  display: none;
-}
-
 .all-inclusive {
   background-color: #f5f5f5;
   padding: 6rem 0 0;
@@ -634,6 +630,7 @@ button:focus, a:focus, input:focus, textarea:focus {
 
 .problems-list__bad {
   border: 4px solid #f5f5f5;
+  padding-right: 20px;
 }
 
 .problems-list__bad p {
@@ -702,16 +699,20 @@ button:focus, a:focus, input:focus, textarea:focus {
 }
 
 #problems-list__li-1 {
-  line-height: 2.1;
+  line-height: 1.5;
 }
 
 #problems-list__li-2 {
   line-height: 2.1;
 }
 
+#problems-list__li-3 {
+  line-height: 2.1;
+}
+
 .materials {
   background: url(../pics/materials/materials-bg.jpg) no-repeat center;
-  margin-top: 9rem;
+  margin-top: 3rem;
   padding-top: 4rem;
 }
 
@@ -749,6 +750,11 @@ button:focus, a:focus, input:focus, textarea:focus {
   border-bottom: 1px dotted;
 }
 
+.materials-block a:hover {
+  text-decoration: none;
+  border: none;
+}
+
 .materials-afterwords {
   font-size: 14px;
   text-align: center;
@@ -759,6 +765,11 @@ button:focus, a:focus, input:focus, textarea:focus {
 .materials-afterwords a {
   color: #46b814;
   border-bottom: 1px dotted;
+}
+
+.materials-afterwords a:hover {
+  text-decoration: none;
+  border: none;
 }
 
 @media (max-width: 1825px) {
@@ -875,6 +886,36 @@ button:focus, a:focus, input:focus, textarea:focus {
     position: static;
     display: none;
   }
+  .scheme {
+    background-size: 0%;
+  }
+  .problems-list {
+    margin-bottom: 6rem;
+    padding-right: 5px;
+  }
+  .problems-list__bad {
+    padding-right: 0;
+  }
+  .problems-woman {
+    display: none;
+  }
+  .materials {
+    background-repeat: repeat-y;
+  }
+  .materials-block {
+    margin-bottom: 4rem;
+  }
+  .materials-afterwords {
+    max-width: 510px;
+    margin: 2rem auto 6rem;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .feedback-block .fotorama {
+    width: 510px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 767px) {
@@ -884,6 +925,9 @@ button:focus, a:focus, input:focus, textarea:focus {
   .wrap__block {
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
+  }
+  .scheme-block {
     text-align: center;
   }
 }
@@ -938,6 +982,9 @@ button:focus, a:focus, input:focus, textarea:focus {
   .prices-tag {
     font-size: 22px;
   }
+  .feedback-block .fotorama__nav-wrap {
+    display: none;
+  }
   .feedback-slider-arrow-prev {
     left: -200px;
   }
@@ -961,6 +1008,18 @@ button:focus, a:focus, input:focus, textarea:focus {
   .prices {
     padding: 10rem 0.5rem;
   }
+  .feedback-block {
+    padding: 30px;
+  }
+  .feedback-form {
+    padding: 5rem 4rem;
+  }
+  .feedback-form .button {
+    padding: 1.5rem 3rem;
+  }
+  .materials-afterwords {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 365px) {
@@ -973,6 +1032,9 @@ button:focus, a:focus, input:focus, textarea:focus {
   }
   .prices-button button {
     padding: 2rem 6.5%;
+  }
+  .feedback-block {
+    padding: 20px 10px;
   }
 }
 
