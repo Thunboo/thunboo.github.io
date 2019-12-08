@@ -1,3 +1,17 @@
+@font-face 
+  font-family: 'ProximaNova_bold'
+  src: url('../fonts/ProximaNova-Bold.eot')
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg')
+  font-weight: bold
+  font-style: normal
+
+@font-face 
+  font-family: 'ProximaNova_Reg'
+  src: url('../fonts/ProximaNova-Regular.eot')
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg')
+  font-weight: normal
+  font-style: normal
+
 /* colors */
 $btn-color: #fcb303
 $icons-color: #46b814 
@@ -9,8 +23,11 @@ $border-input: #dddddd
 html
     font-size: 10px
     box-sizing: border-box
+body 
+    font-family: ProximaNova_Reg
 .button
     background-color: $btn-color
+    font-family: 'ProximaNova_Bold'
     color: $light
     padding: 1rem 3rem
     border-radius: 8px
@@ -57,7 +74,7 @@ button, a, input, textarea
         h1
             text-transform: uppercase
             font-size: 4rem
-            font-weight: 650
+            font-family: ProximaNova_Bold
             margin-bottom: 4rem
             line-height: 1.45
         span
@@ -126,7 +143,7 @@ button, a, input, textarea
 .phone-link
     display: inline-block
     color: $text
-    font-weight: 800
+    font-family: ProximaNova_Bold
     font-size: 19px
     height: 7rem
     line-height: 7rem
@@ -141,6 +158,7 @@ button, a, input, textarea
     margin: 6rem 0
     font-size: 3.2rem
     font-weight: 650
+    font-family: 'ProximaNova_Bold'
     &_light
         color: $light
     h2
@@ -156,6 +174,7 @@ button, a, input, textarea
     &-block
         text-align: center
         h3
+            font-family: 'ProximaNova_Bold'
             margin: 3rem 0 2rem
     &-text
         width: 76%
@@ -222,6 +241,7 @@ button, a, input, textarea
                 display: block
                 margin: 2rem 0
                 width: 100%
+                height: 12rem !important
                 border: 1px solid $border-input
                 padding-left: 8px 
                 padding-top: 8px
@@ -252,7 +272,7 @@ button, a, input, textarea
         padding: 2rem 2.2rem
         h4  
             font-size: 18px
-            font-weight: 650 
+            font-family: 'ProximaNova_Bold'
             margin: 2rem 0
     &-list
             list-style: none 
@@ -271,13 +291,12 @@ button, a, input, textarea
                     background-size: 70%
                     vertical-align: middle
                     margin-right: 1rem
-
     img 
         margin-bottom: 2rem
         max-width: 28rem
     &-tag
         font-size: 19px
-        font-weight: 650
+        font-family: 'ProximaNova_Bold'
         display: block
         margin-bottom: 2rem
 .feedback
@@ -389,17 +408,20 @@ button, a, input, textarea
         margin-bottom: 9rem
         h2 
             margin: 15px 0 10px
-            font-weight: 700
+            font-size: 22px
+            font-family: 'ProximaNova_Bold'
         span 
-            font-size: 13px
+            font-size: 16px
 .all-inclusive
     background-color: #f5f5f5
     padding: 6rem 0 0 
     .section-header
         margin-top: 0
+        h2 
+            font-size: 42px
+            color: darken($icons-color, 10%)
         p 
             margin-top: 10px
-            font-weight: 400
     .media
         min-height: 90px
         &-left 
@@ -488,7 +510,7 @@ button, a, input, textarea
         transform: translateX(-60%)
         z-index: 2
 #problems-list__li-1
-    line-height: 1.5
+    line-height: 2.1
 #problems-list__li-2
     line-height: 2.1
 #problems-list__li-3
@@ -507,6 +529,7 @@ button, a, input, textarea
         min-height: 32rem
         img 
             height: 177px
+            margin: 0 auto
         h2 
             font-weight: 700
         p 
@@ -531,7 +554,205 @@ button, a, input, textarea
             &:hover 
                 text-decoration: none
                 border: none
-//=====================================adaptive section============================
+.watch
+    background: url(../pics/bg-watch.jpg) no-repeat center
+    padding: 9rem 0
+    .section-header
+        text-align: left
+        h2 
+            font-size: 42px
+            text-transform: uppercase
+        p
+            font-family: ProximaNova_Reg
+            font-weight: normal
+            font-size: 24px
+            line-height: 1.2
+            margin-top: 3rem
+    &-form
+        position: relative
+        background-color: $light
+        margin-top: 4rem
+        padding: 4rem 
+        text-align: center
+        &-checkbox 
+            margin-right: 8px
+            vertical-align: middle
+        .main__form-input
+            height: 5rem
+        label 
+            position: absolute
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            background-color: $light
+            font-size: 13px
+            padding: 5px
+        span 
+            font-size: 12px
+            padding: 0 5px
+            line-height: 1.2
+            a 
+                color: $icons-color
+                text-decoration: underline
+                &:hover 
+                    text-decoration: none
+        button 
+            width: 100%
+            margin: 2rem 0 5px
+            padding: 2rem 3rem
+            display: block
+            font-size: 14px
+        &-message
+            font-size: 12px
+.bonus
+    background-color: darken($icons-color, 18%)
+    padding: 6rem 0
+    .section-header
+        color: $light
+        h2 
+            font-size: 36px
+        p 
+            font-family: ProximaNova_Reg
+            font-weight: normal
+            font-size: 18px
+    &-block
+        text-align: center
+        p 
+            color: $light 
+            font-family: ProximaNova_Bold
+            font-size: 20px
+            margin: 2rem 0
+        button 
+            font-size: 16px
+            padding: 1.5rem 5rem
+.benefits
+    padding-bottom: 6rem
+    .section-header
+        font-size: 42px
+    &-block
+        margin-top: 2rem
+        h2 
+            font-weight: 600
+            margin-bottom: 1rem
+        p 
+            font-size: 16px
+            margin: 0
+            line-height: 1.2
+    &-questions
+        margin-top: 3rem
+        text-align: center
+        h2 
+            font-size: 26px
+            font-weight: 600
+        p 
+            font-size: 16px
+        button
+            margin-top: 2rem
+            font-size: 14px
+            padding: 2rem 5rem
+.contacts
+    background: url(../pics/bg-contacts.jpg) no-repeat right
+    padding: 6rem 0 4rem
+    &-address
+        margin-top: -1rem
+        font-size: 17px
+        &-title
+            font-size: 18px
+    &-phone-link
+        margin-top: 2rem
+        font-size: 17px
+        line-height: 1.2
+        a 
+            color: $text
+
+            font-weight: 600
+        &-title
+            font-size: 18px
+            line-height: 2
+    &-email
+        margin-top: 2rem
+        font-size: 17px
+        a 
+            color: $text
+            text-decoration: underline
+            &:hover 
+                text-decoration: none
+        &-title
+            font-size: 18px
+    &-requisites
+        margin-top: 2rem
+        font-size: 17px
+        p 
+            margin: 0
+            line-height: 1.2
+        &-title
+            font-size: 18px
+    .section-header
+        margin-top: 4rem
+        text-align: left
+    &-form
+        position: relative
+        background-color: $light
+        margin: 4rem 0
+        padding: 4rem 
+        text-align: center
+        &-checkbox 
+            margin-right: 8px
+            vertical-align: middle
+        &-textarea
+            width: 100%
+            height: 12rem !important
+            border: 1px solid $border-input
+        .main__form-input
+            height: 5rem
+        label 
+            position: absolute
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            background-color: $light
+            font-size: 13px
+            padding: 5px
+        span 
+            font-size: 12px
+            padding: 0 5px
+            line-height: 1.2
+            a 
+                color: $icons-color
+                text-decoration: underline
+                &:hover 
+                    text-decoration: none
+        button 
+            width: 100%
+            margin: 2rem 0 5px
+            padding: 2rem 3rem
+            display: block
+            font-size: 14px
+        &-message
+            font-size: 12px
+.footer
+    padding: 2rem 0
+    &-middle 
+        text-align: center
+    &-phone-link
+        display: block
+        color: $text 
+        font-size: 20px
+        font-weight: 600  
+        &:hover 
+            color: $text 
+            text-decoration: none
+    &-email
+        display: block
+        color: $text 
+        font-size: 16px
+        text-decoration: underline
+        &:hover 
+            color: $text 
+            text-decoration: none
+    &-links
+        margin: 1rem 3px
+        &-block
+            text-align: right
+//=================================adaptive section================================
 //=================================================================================
 @media ( max-width: 1825px )
     .features
@@ -563,12 +784,19 @@ button, a, input, textarea
                 bottom: 2rem
                 left: 50%
                 transform: translateX(-50%)
+@media ( max-width: 1200px )
+    #problems-list__li-1
+        line-height: 1.5
+    .bonus
+        &-block
+            img 
+                width: 280px
 @media ( max-width: 1150px )
     .prices
         &-block
             padding: 2rem 1.5rem
             img 
-                max-width: 27rem      
+                max-width: 27rem    
 @media ( max-width: 1085px )
     #prices-h4-1
         padding: 0 0.5rem
@@ -620,6 +848,8 @@ button, a, input, textarea
             display: none
     .scheme 
         background-size: 0%
+    #problems-list__li-1
+        line-height: 2.1
     .problems
         &-list 
             min-height: 32rem
@@ -637,6 +867,16 @@ button, a, input, textarea
         &-afterwords
             max-width: 510px
             margin: 2rem auto 6rem
+    .watch 
+        background: url(../pics/bg-promo-mobile.jpg) no-repeat center 
+        background-size: cover
+        .section-header
+            text-align: center
+    .bonus
+        &-block
+            margin-bottom: 3rem
+    .contacts
+        background: url(../pics/bg-contacts2.jpg)
 @media ( max-width: 991px) and ( min-width: 768px)
     .feedback
         &-block
@@ -654,6 +894,8 @@ button, a, input, textarea
     .scheme
         &-block 
             text-align: center
+    .watch
+        padding: 2rem 0
 @media ( max-width: 594px )
     .section-header
         font-size: 3rem
@@ -695,6 +937,7 @@ button, a, input, textarea
         &-tag
             font-size: 22px
     .feedback
+        padding-bottom: 1rem
         &-block
             .fotorama
                 &__nav-wrap
@@ -705,6 +948,33 @@ button, a, input, textarea
                     left: -200px
                 &-next
                     right: 800px
+    .scheme
+        &-block 
+            margin-bottom: 3rem
+        .section-header
+            margin: 2rem 0
+    .problems
+        &-list
+            &__good 
+                margin-bottom: 1rem
+    .contacts
+        .section-header
+            text-align: center
+        &-address
+            text-align: center 
+        &-phone-link
+            text-align: center
+        &-email
+            text-align: center
+        &-requisites
+            text-align: center
+    .footer
+        &-logo
+            text-align: center
+            margin-bottom: 2rem
+        &-links
+            &-block
+                text-align: center
 @media ( max-width: 434px)
     .features
         width: 100%
@@ -727,6 +997,13 @@ button, a, input, textarea
     .materials
         &-afterwords
             max-width: 300px
+    .watch
+        padding: 1rem 0
+        .section-header
+            margin-top: 3rem
+@media ( max-width: 400px )
+    #problems-list__li-1
+        line-height: 1.5
 @media ( max-width: 365px )
     .popup
         &-form
